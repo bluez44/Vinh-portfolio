@@ -9,9 +9,9 @@ function Projects() {
             initial={{opacity:0, y:-100}}
             transition={{duration:0.5}}
             className="my-20 text-center text-4xl">
-            Project
+            Project (In developing)
         </motion.h2>
-        <div>{PROJECTS.map((project, index) => (
+        {/* <div>{PROJECTS.map((project, index) => (
             <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
                 <motion.div 
                     whileInView={{opacity:1, x:0}}
@@ -53,7 +53,7 @@ function Projects() {
                     </div>
                 </motion.div>
             </div>
-        ))}</div>
+        ))}</div> */}
     </div>
   )
 }
