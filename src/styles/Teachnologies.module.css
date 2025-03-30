@@ -1,0 +1,24 @@
+.figma_custom path:first-child {
+    color: #f45224;
+    fill: #f45224;
+} 
+
+.figma_custom path:nth-child(2) {
+    color: #ff7566;
+    fill: #ff7566;
+}
+
+.figma_custom path:nth-child(3) {
+    color: #20beff;
+    fill: #20beff;
+}
+
+.figma_custom path:nth-child(4) {
+    color: #12d086;
+    fill: #12d086;
+}
+
+.figma_custom path:nth-child(5) {
+    color: #a55eff;
+    fill: #a55eff;
+}
