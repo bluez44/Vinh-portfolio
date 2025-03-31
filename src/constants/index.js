@@ -1,46 +1,88 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/portfolio.jpg";
+import project2 from "../assets/projects/monkey.png";
+import project3 from "../assets/projects/todo.jpg";
+import project4 from "../assets/projects/money.jpg";
+import project5 from "../assets/projects/vng.png"
+import project6 from "../assets/projects/online_exam.png"
 
 export const HERO_CONTENT = `I am a passionate front-end developer with a good foundation in building web applications. As a Computer Science student at Ho Chi Minh City University of Technology, I have gained experience working with front-end technologies like React and Next.js, learned my self basic about back-end technologies like Node.js, Java Spring, MySQL, PostgreSQL, and MongoDB. I am eager to apply my knowledge to develop innovative solutions that enhance user experiences and drive business efficiency.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile front-end developer with a passion for creating efficient and user-friendly web applications. As a third-year Computer Science student at Ho Chi Minh City University of Technology, I have been honing my skills in technologies like React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has grown into a continuous pursuit of learning and problem-solving. I thrive in collaborative environments and enjoy tackling complex challenges to build high-quality solutions. Outside of coding, I stay active, explore new technologies, and work on personal projects to sharpen my skills.`;
 
-export const PROJECTS = [
-  {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    positions: ["Front-end developer: dosomethinggg", "Project manager: Still doing somethinggg"]
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-    positions: ["Front-end developer: dosomethinggg", "Project manager: Still doing somethinggg"]
-  },
+export const PERSONAL_PROJECTS = [
   {
     title: "Portfolio Website",
-    image: project3,
+    image: project1,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    positions: ["Front-end developer: dosomethinggg", "Project manager: Still doing somethinggg"]
+    technologies: ["HTML", "CSS", "Reactjs", "Tailwind CSS", "Framer Motion"],
+    positions: [],
+    github: "https://github.com/bluez44/Vinh-portfolio",
+    demo: ""
   },
   {
-    title: "Blogging Platform",
+    title: "Simple to do app",
+    image: project3,
+    description:
+      "A simple to do app with features like adding tasks, editing tasks, and deleting tasks.",
+    technologies: ["HTML", "CSS", "Reactjs", "Tailwind CSS"],
+    positions: [],
+    github: "https://github.com/bluez44/todo-app",
+    demo: ""
+  },
+  {
+    title: "Money Manager (In developing)",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    positions: ["Front-end developer: dosomethinggg", "Project manager: Still doing somethinggg"]
+      "A money manager app with features like adding transactions, editing transactions, and deleting transactions, as well as a chart to visualize the transactions.",
+    technologies: ["HTML", "CSS", "Reactjs", "Nextjs", "Tailwind CSS", "PostgreSQL"],
+    positions: [],
+    github: "https://github.com/bluez44/my-money",
+    demo: ""
   },
 ];
+
+export const TEAM_PROJECTS = [
+  {
+    title: "Monkey job",
+    image: project2,
+    description:
+      "A user-friendly interface for finding job as well as hiring new employees. Monkey job provide features like adding jobs, editing jobs, applying for jobs and deleting jobs.",
+    technologies: ["HTML", "CSS", "Reactjs", "Bootstrap"],
+    positions: [
+      "Project manager: Oversee the weekly progress of team members and ensure tasks are completed on schedule.",
+      "Front-end developer: Develop user interfaces, handle login authentication using username and password, work with APIs to implement all website needed funcitonalities.", 
+    ],
+    github: "https://github.com/bluez44/Monkeyjob-Frontend",
+    demo: "https://monkey-job.vercel.app/"
+  },
+  {
+    title: "Company website clone (In developing)",
+    image: project5,
+    description:
+      "A website introduce about VNG company and their activity, news, products.",
+    technologies: ["HTML", "CSS", "Reactjs", "Bootstrap", "PHP", "MySQL"],
+    positions: [
+      "Project manager: Oversee the weekly progress of team members and ensure tasks are completed on schedule.",
+      "Front-end developer: Develop user interfaces, handle login authentication using username, password, work with APIs to handle guest form about the company", 
+      "Back-end developer: Design and implement the server-side logic, including database management and API integration for authentication features, contact forms.", 
+    ],
+    github: "https://github.com/bluez44/LTW",
+    demo: ""
+  },
+  {
+    title: "Simple online exam",
+    image: project6,
+    description:
+      "A online exam website allow teacher to create exams in simple way, student can join an eaxm by using exam pass code and id provided by their teacher.",
+    technologies: ["HTML", "CSS", "Reactjs", "Nextjs", "Tailwind CSS", "Java Spring", "PostgreSQL"],
+    positions: [
+      "Front-end developer: Design teacher create quizz, student join quizz page UI; Develop student join quizz, user profile page ", 
+    ],
+    github: "https://github.com/NguyenVu04/TestMaster_Project",
+    demo: ""
+  },
+]
 
 export const CONTACT = {
   address: "Dorm B - VNUHCM, Mac Dinh Chi street, Dong Hoa, Di An, Binh Duong",
