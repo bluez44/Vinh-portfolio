@@ -72,7 +72,7 @@ function LogoRound() {
 
             <path d="M 150 110 A 225 105 0 1 0 450 110" stroke="url(#gradient-stroke)" fill="transparent" strokeWidth="1"/>
             <path d="M 125 110 A 260 105 0 1 0 475 110" stroke="url(#gradient-stroke)" fill="transparent" strokeWidth="1"/>
-            <path d="M 100 110 A 290 105 0 1 0 500 110" stroke="url(#gradient-stroke)" fill="transparent" strokeWidth="1"/>
+            <path d="M 100 110 A 290 106 0 1 0 500 110" stroke="url(#gradient-stroke)" fill="transparent" strokeWidth="1"/>
 
             {
                 logoList.map((logo, index) => {
