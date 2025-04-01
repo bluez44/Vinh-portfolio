@@ -4,6 +4,8 @@ import project3 from "../assets/projects/todo.jpg";
 import project4 from "../assets/projects/money.jpg";
 import project5 from "../assets/projects/vng.png"
 import project6 from "../assets/projects/online_exam.png"
+import project7 from '../assets/projects/shopee.png'
+import project8 from '../assets/projects/TheBand.png'
 
 export const HERO_CONTENT = `I am a passionate front-end developer with a good foundation in building web applications. As a Computer Science student at Ho Chi Minh City University of Technology, I have gained experience working with front-end technologies like React and Next.js, learned my self basic about back-end technologies like Node.js, Java Spring, MySQL, PostgreSQL, and MongoDB. I am eager to apply my knowledge to develop innovative solutions that enhance user experiences and drive business efficiency.`;
 
@@ -39,6 +41,16 @@ export const PERSONAL_PROJECTS = [
     positions: [],
     github: "https://github.com/bluez44/my-money",
     demo: ""
+  },
+  {
+    title: "Shopee UI clone",
+    image: project7,
+    description:
+      "A single page UI clone of Shopee.",
+    technologies: ["HTML", "CSS"],
+    positions: [],
+    github: "https://github.com/bluez44/Shopee-clone.github.io",
+    demo: "https://bluez44.github.io/Shopee-clone.github.io/"
   },
 ];
 
