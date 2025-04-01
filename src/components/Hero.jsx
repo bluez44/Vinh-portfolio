@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants"
-import profilePic from '../assets/kevinRushProfile.png'
+import profilePic from '../assets/me.jpg'
 import { motion } from "framer-motion"
 
 const container = (delay) => ({
@@ -37,18 +37,28 @@ function Hero() {
                         variants={container(1)}
                         initial="hidden"
                         whileInView="visible"
-                        className="my-2 max-w-xl py-6 font-light text-justify tracking-tighter">{HERO_CONTENT}</motion.p>
+                        className="my-2 max-w-xl py-6 font-light text-justify tracking-tighter"
+                    >
+                            {HERO_CONTENT}
+                    </motion.p>
                 </div>
             </div>
             <div className="w-full lg:w-1/2 lg:p-8">
-                <div className="flex justify-center">
-                    <motion.img 
-                        initial={{x:100, opacity:0}}
-                        whileInView={{x:0, opacity:1}}
-                        transition={{duration:1, delay:1.2}}
+                <motion.div 
+                    className="flex relative justify-center rounded-2xl"
+                    initial={{x:100, opacity:0}}
+                    whileInView={{x:0, opacity:1}}
+                    transition={{duration:1, delay:1.2}}
+                >
+                    <img 
+                        
+                        className="rounded-3xl brightness-90"
                         src={profilePic} alt="profile" 
                     />
-                </div>
+                    <div className="absolute left-0 right-0 bottom-0 h-1/2 bg-linear-to-t from-slate-900 to-transparent rounded-3xl">
+
+                    </div>
+                </motion.div>
             </div>
         </div>
     </div>

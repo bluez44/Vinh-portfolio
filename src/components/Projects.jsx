@@ -19,7 +19,7 @@ function Projects() {
             Personal projects
         </motion.h5>
         <div>{PERSONAL_PROJECTS.map((project, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className="mb-8 flex flex-wrap lg:justify-center md:gap-12">
                 <motion.div 
                     whileInView={{opacity:1, x:0}}
                     initial={{opacity:0, x:-100}}
@@ -27,7 +27,7 @@ function Projects() {
                     className="w-full lg:w-1/4">
                     <img 
                         src={project.image} 
-                        width={300} 
+                        width={'100%'} 
                         height={150} 
                         alt={project.title} 
                         className="mb-6 rounded"
@@ -50,12 +50,12 @@ function Projects() {
                     </ul>
                     {
                         project.github && (
-                            <p className="mb-4 text-neutral-400">Github: <a target="_blank" href={project.github}>{project.github}</a></p>
+                            <p className="mb-4 text-neutral-400 break-words">Github: <a target="_blank" href={project.github}>{project.github}</a></p>
                         )
                     }
                     {
                         project.demo && (
-                            <p className="mb-4 text-neutral-400">Demo: <a target="_blank" href={project.demo}>{project.demo}</a></p>
+                            <p className="mb-4 text-neutral-400 break-words">Demo: <a target="_blank" href={project.demo}>{project.demo}</a></p>
                         )
                     }
                     <div className="flex flex-wrap gap-1 mt-3">
@@ -80,7 +80,7 @@ function Projects() {
             Team projects
         </motion.h5>
         <div>{TEAM_PROJECTS.map((project, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className="mb-8 flex flex-wrap lg:justify-center md:gap-12">
                 <motion.div 
                     whileInView={{opacity:1, x:0}}
                     initial={{opacity:0, x:-100}}
@@ -88,7 +88,7 @@ function Projects() {
                     className="w-full lg:w-1/4">
                     <img 
                         src={project.image} 
-                        width={300} 
+                        width={'100%'} 
                         height={150} 
                         alt={project.title} 
                         className="mb-6 rounded"
@@ -111,12 +111,12 @@ function Projects() {
                     </ul>
                     {
                         project.github && (
-                            <p className="mb-4 text-neutral-400">Github: <a target="_blank" href={project.github}>{project.github}</a></p>
+                            <p className="mb-4 text-neutral-400 break-words">Github: <a target="_blank" href={project.github}>{project.github}</a></p>
                         )
                     }
                     {
                         project.demo && (
-                            <p className="mb-4 text-neutral-400">Demo: <a target="_blank" href={project.demo}>{project.demo}</a></p>
+                            <p className="mb-4 text-neutral-400 break-words">Demo: <a target="_blank" href={project.demo}>{project.demo}</a></p>
                         )
                     }
                     <div className="flex flex-wrap gap-1 mt-3">
