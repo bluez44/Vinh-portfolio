@@ -11,6 +11,8 @@ import { motion } from "framer-motion"
 
 import styles from '../styles/Teachnologies.module.css'
 
+import LogoRound from "./LogoRound"
+
 const iconVariants = (duration) => ({
     initial: {y:-10},
     animate: {
@@ -36,90 +38,90 @@ function Technologies() {
             initial={{x:-100, opacity:0}}
             whileInView={{x:0, opacity:1}}
             transition={{duration:1.5}}
-            className="flex flex-wrap items-center justify-center gap-4 lg:max-w-2/3 mx-auto">
+            className="flex flex-wrap items-center justify-center gap-4 lg:max-w-2/3 mx-auto mb-12 md:mb-5">
             <motion.div 
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiReactjsLine className="text-7xl text-cyan-400" />
+                <RiReactjsLine className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-cyan-400" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(3)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <TbBrandNextjs className="text-7xl" />
+                <TbBrandNextjs className="text-xl sm:text-3xl md:text-5xl lg:text-7xl" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(3.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiMongodb className="text-7xl text-green-500" />
+                <SiMongodb className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-green-500" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(4)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <BiLogoCPlusPlus className="text-7xl text-sky-700" />
+                <BiLogoCPlusPlus className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-sky-700" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <FaNodeJs className="text-7xl text-green-600" />
+                <FaNodeJs className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-green-600" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(2)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <BiLogoPostgresql className="text-7xl text-sky-700" />
+                <BiLogoPostgresql className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-sky-700" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(4)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiJava className="text-7xl text-red-500" />
+                <DiJava className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-red-500" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(6)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <BiLogoTypescript className="text-7xl text-sky-600" />
+                <BiLogoTypescript className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-sky-600" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(3.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <SiSpringboot className="text-7xl text-lime-500" />
+                <SiSpringboot className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-lime-500" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(1)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <RiTailwindCssFill className="text-7xl text-sky-400" />
+                <RiTailwindCssFill className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-sky-400" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(2)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiBootstrap className="text-7xl text-violet-600" />
+                <DiBootstrap className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-violet-600" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(1.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <AiOutlineGithub className="text-7xl" />
+                <AiOutlineGithub className="text-xl sm:text-3xl md:text-5xl lg:text-7xl" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(3.5)}
@@ -127,7 +129,7 @@ function Technologies() {
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <div className="rounded-full bg-white">
-                    <SiPostman className="text-7xl text-orange-500" />
+                    <SiPostman className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-orange-500" />
                 </div>
             </motion.div>
             <motion.div 
@@ -135,16 +137,24 @@ function Technologies() {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiScrum className="text-7xl text-blue-600" />
+                <DiScrum className="text-xl sm:text-3xl md:text-5xl lg:text-7xl text-blue-600" />
             </motion.div>
             <motion.div 
                 variants={iconVariants(1)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                <LuFigma className={`${styles.figma_custom} text-7xl text-blue-600`} />
+                <LuFigma className={`${styles.figma_custom} text-xl sm:text-3xl md:text-5xl lg:text-7xl text-blue-600`} />
             </motion.div>
             
+        </motion.div>
+        <motion.div
+            initial={{opacity:0, y:400}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:1}}
+            className="relative"
+        >
+            <LogoRound />
         </motion.div>
     </div>
   )
