@@ -23,10 +23,10 @@ export const PERSONAL_PROJECTS = [
     demo: ""
   },
   {
-    title: "Simple to do app",
+    title: "To do app",
     image: project3,
     description:
-      "A simple to do app with features like adding tasks, editing tasks, and deleting tasks.",
+      "A small app help user manage their tasks with features like adding tasks, editing tasks, and deleting tasks.",
     technologies: ["HTML", "CSS", "Reactjs", "Tailwind CSS"],
     positions: [],
     github: "https://github.com/bluez44/todo-app",
@@ -83,7 +83,7 @@ export const TEAM_PROJECTS = [
     demo: ""
   },
   {
-    title: "Simple online exam",
+    title: "Online exam website",
     image: project6,
     description:
       "A online exam website allow teacher to create exams in simple way, student can join an eaxm by using exam pass code and id provided by their teacher.",
