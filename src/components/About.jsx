@@ -4,14 +4,13 @@ import { motion } from 'framer-motion'
 
 function About() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="AboutSection" className="border-b border-neutral-900 pb-4">
         <motion.h2 
             whileInView={{opacity:1, y:0}}
             initial={{opacity:0, y:-100}}
             transition={{duration:0.5}}
             className="my-20 text-center text-4xl">
-            About
-            <span className="text-neutral-500"> Me</span>
+            About Me
         </motion.h2>
         <div className="flex flex-wrap items-center">
             <motion.div 
