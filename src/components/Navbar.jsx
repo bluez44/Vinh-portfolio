@@ -1,5 +1,5 @@
 import logo from "../assets/logo/logo.jpg";
-import SocialList from "./ui/socialList";
+import SocialList from "./ui/SocialList";
 
 function Navbar() {
   return (
