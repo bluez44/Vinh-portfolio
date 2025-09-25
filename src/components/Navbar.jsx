@@ -1,4 +1,5 @@
 import logo from "../assets/logo/logo.jpg";
+import SocialList from "./ui/SocialList";
 
 function Navbar() {
   return (
@@ -11,18 +12,7 @@ function Navbar() {
         />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a
-          href="https://www.linkedin.com/in/quang-vinh-485331286/"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-        <a href="https://github.com/bluez44" target="_blank">
-          <FaGithub />
-        </a>
-        <a href="https://www.facebook.com/vlqvinh.44" target="_blank">
-          <FaFacebook />
-        </a>
+        <SocialList />
       </div>
     </nav>
   );

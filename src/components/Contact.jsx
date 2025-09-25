@@ -1,7 +1,7 @@
 import { CONTACT } from "../constants";
 
 import { motion } from "framer-motion";
-import SocialList from "./ui/socialList";
+import SocialList from "./ui/SocialList";
 
 function Contact() {
   return (
