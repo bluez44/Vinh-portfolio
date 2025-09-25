@@ -1,53 +1,39 @@
-import React, { useEffect } from "react";
-
-const content = [
-  { id: "hero", label: "01" },
-  { id: "about", label: "02" },
-  { id: "experience", label: "03" },
-  { id: "technologies", label: "04" },
-  { id: "projects", label: "05" },
-  { id: "contact", label: "06" },
-];
+import React, { useEffect, useState } from "react";
 
 function PageObserver() {
+  const [scrollPercentage, setScrollPercentage] = useState(0);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      // const windowHeight = window.innerHeight;
       const documentHeight = document.body.scrollHeight;
-
-      const scrollPercentage =
+      const percentage =
         (scrollPosition / (documentHeight - window.innerHeight)) * 100;
+      setScrollPercentage(percentage);
+    };
 
-      const scrollBar = document.getElementById("scrollBar");
-      if (scrollBar) {
-        scrollBar.style.height = `${scrollPercentage}%`;
-      }
-    });
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div
       id="PageObserver"
-      className="fixed w-1 h-[calc(100%-10rem)] bg-gradient-to-b from-pink-300 via-slate-300 to-purple-500 start-96 top-1/2 translate-y-[-50%] rounded-full"
+      className="hidden lg:block absolute w-1 h-[calc(100%-20rem)] bg-gradient-to-b from-pink-300 via-slate-300 to-purple-500 start-0 top-1/2 translate-y-[-50%] rounded-full"
     >
       <div className="relative w-full h-full bg-transparent">
-        <div id="scrollBar" className="w-1 bg-slate-700" />
-        {content.map((item, index) => {
-          let position = index * (100 / (content.length - 1)).toFixed(0);
-
-          if (index === 0) position = 0;
-
-          if (index === content.length - 1) position = 100;
-
-          return (
-            <div
-              key={item.id}
-              className={`w-6 h-6 absolute left-1/2 bg-white rounded-full translate-x-[-50%] cursor-pointer hover:scale-150 duration-500`}
-              style={{ top: `${position}%` }}
-            />
-          );
-        })}
+        <div
+          className="w-1 bg-slate-700 overflow-visible flex flex-col items-center justify-end transition-all duration-200 ease-out"
+          style={{ height: `${scrollPercentage}%` }}
+        >
+          <div
+            id="indicator"
+            className="w-6 h-6 bg-white rounded-full cursor-pointer hover:scale-150 duration-500"
+          />
+        </div>
       </div>
     </div>
   );

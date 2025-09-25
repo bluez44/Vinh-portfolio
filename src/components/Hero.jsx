@@ -22,7 +22,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5, delay: 2 }}
-              className="text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-center lg:text-justify"
             >
               Hi!
             </motion.h1>
@@ -31,7 +31,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 0.5, delay: 2 }}
-              className="pb-16 text-5xl font-thin tracking-tight lg:text-7xl"
+              className="pb-16 text-5xl font-thin tracking-tight lg:text-7xl text-center lg:text-justify"
             >
               I'm Quang Vinh
             </motion.h2>
@@ -39,7 +39,7 @@ function Hero() {
               variants={container(0.5)}
               initial="hidden"
               whileInView="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent text-center lg:text-justify"
             >
               Front-end developer
             </motion.span>
@@ -47,7 +47,7 @@ function Hero() {
               variants={container(1)}
               initial="hidden"
               whileInView="visible"
-              className="my-2 max-w-xl py-6 font-light text-justify tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light text-justify tracking-tighter "
             >
               {HERO_CONTENT}
             </motion.p>

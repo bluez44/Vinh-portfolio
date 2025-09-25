@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/portfolio.jpg";
 import project2 from "../assets/projects/monkey.png";
 import project3 from "../assets/projects/todo.jpg";
-import project4 from "../assets/projects/money.jpg";
+import project4 from "../assets/projects/location-tracker.png";
 import project5 from "../assets/projects/vng.png"
 import project6 from "../assets/projects/online_exam.png"
 import project7 from '../assets/projects/shopee.png'
@@ -15,11 +15,31 @@ export const WORK_EXPERIENCE = [
     company: "TMA Solutions",
     position: "Intern Front-end Developer",
     duration: "June 2025 - September 2025",
-    description: ".......",
+    description: {
+      "Company's industry":  "TMA Solutions is a leading software outsourcing company in Vietnam, delivering reliable IT services and solutions that help global clients optimize costs, improve quality, and accelerate growth.", 
+      "Responsibilities": "Participated in real-world projects, practicing user interface development with React.js and libraries for API handling, state management, and UI components under the guidance of a mentor. Gained hands-on experience with new libraries and technologies such as n8n - a low-code tool for building automated workflows to create chatbots, Redux - a popular React library for managing global state, and Zod - a library for validating input data."
+
+    },
   },
 ];
 
 export const PERSONAL_PROJECTS = [
+  {
+    title: "Location Tracker",
+    image: project4,
+    description:
+      "A project that enables users to track device locations in real time. It includes an Android application installed on the device to collect live location data, and a web platform that conveniently displays the tracked device's position on a map.",
+    technologies: [
+      "Reactjs",
+      "React Native",
+      "Tailwind CSS",
+      "Nodejs",
+      "Mongodb",
+    ],
+    positions: [],
+    github: "https://github.com/bluez44/Location-tracker",
+    demo: "",
+  },
   {
     title: "Portfolio Website",
     image: project1,
@@ -28,7 +48,7 @@ export const PERSONAL_PROJECTS = [
     technologies: ["HTML", "CSS", "Reactjs", "Tailwind CSS", "Framer Motion"],
     positions: [],
     github: "https://github.com/bluez44/Vinh-portfolio",
-    demo: ""
+    demo: "",
   },
   {
     title: "To do app",
@@ -38,27 +58,16 @@ export const PERSONAL_PROJECTS = [
     technologies: ["HTML", "CSS", "Reactjs", "Tailwind CSS"],
     positions: [],
     github: "https://github.com/bluez44/todo-app",
-    demo: ""
-  },
-  {
-    title: "Money Manager (In developing)",
-    image: project4,
-    description:
-      "A money manager app with features like adding transactions, editing transactions, and deleting transactions, as well as a chart to visualize the transactions.",
-    technologies: ["HTML", "CSS", "Reactjs", "Nextjs", "Tailwind CSS", "PostgreSQL"],
-    positions: [],
-    github: "https://github.com/bluez44/my-money",
-    demo: ""
+    demo: "",
   },
   {
     title: "Shopee UI clone",
     image: project7,
-    description:
-      "A single page UI clone of Shopee.",
+    description: "A single page UI clone of Shopee.",
     technologies: ["HTML", "CSS"],
     positions: [],
     github: "https://github.com/bluez44/Shopee-clone.github.io",
-    demo: "https://bluez44.github.io/Shopee-clone.github.io/"
+    demo: "https://bluez44.github.io/Shopee-clone.github.io/",
   },
 ];
 
@@ -105,7 +114,7 @@ export const TEAM_PROJECTS = [
 ]
 
 export const CONTACT = {
-  address: "Dorm B - VNUHCM, Mac Dinh Chi street, Dong Hoa, Di An, Binh Duong",
+  address: "Tan Phu, Ho Chi Minh City, Vietnam",
   phoneNo: "+84 396 576 314",
   email: "vlqvinh444@gmail.com",
 };
